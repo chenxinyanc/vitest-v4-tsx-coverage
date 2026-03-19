@@ -11,13 +11,24 @@
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
     "@vitest/coverage-v8": "latest",
     "@vitest/ui": "latest",
+    "jsdom": "^29.0.0",
     "vite": "latest",
     "vitest": "latest"
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
 }
