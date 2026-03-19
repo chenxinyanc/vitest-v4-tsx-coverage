@@ -1,0 +1,20 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 275ab127848398bc52248f2492c77584da55c095..3a205c484837408da688314902a25a9c98045e95 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -822,9 +822,15 @@ async function convert(options) {
+ 		},
+ 		onConditionalExpression(node, branches) {
+ 			mapper.onBranch("cond-expr", node, branches);
++			for (const branch of branches) {
++				if (branch) mapper.onStatement(branch);
++			}
+ 		},
+ 		onLogicalExpression(node, branches) {
+ 			mapper.onBranch("binary-expr", node, branches);
++			for (const branch of branches) {
++				if (branch) mapper.onStatement(branch);
++			}
+ 		},
+ 		onSwitchStatement(node, cases) {
+ 			mapper.onBranch("switch", node, cases);

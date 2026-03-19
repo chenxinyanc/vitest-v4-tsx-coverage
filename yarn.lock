@@ -756,7 +756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ast-v8-to-istanbul@npm:^1.0.0":
+"ast-v8-to-istanbul@npm:1.0.0":
   version: 1.0.0
   resolution: "ast-v8-to-istanbul@npm:1.0.0"
   dependencies:
@@ -764,6 +764,17 @@ __metadata:
     estree-walker: "npm:^3.0.3"
     js-tokens: "npm:^10.0.0"
   checksum: 10c0/35e57b754ba63287358094d4f7ae8de2de27286fb4e76a1fbf28b2e67e3b670b59c3f511882473d0fd2cdbaa260062e3cd4f216b724c70032e2b09e5cebbd618
+  languageName: node
+  linkType: hard
+
+"ast-v8-to-istanbul@patch:ast-v8-to-istanbul@npm%3A1.0.0#~/.yarn/patches/ast-v8-to-istanbul-npm-1.0.0-482abc2c00.patch":
+  version: 1.0.0
+  resolution: "ast-v8-to-istanbul@patch:ast-v8-to-istanbul@npm%3A1.0.0#~/.yarn/patches/ast-v8-to-istanbul-npm-1.0.0-482abc2c00.patch::version=1.0.0&hash=83fd1f"
+  dependencies:
+    "@jridgewell/trace-mapping": "npm:^0.3.31"
+    estree-walker: "npm:^3.0.3"
+    js-tokens: "npm:^10.0.0"
+  checksum: 10c0/f2e2ca8cc22cd026419a2e50f400282e72a5680016ff8edb0e91cfadaaba3083ac7fe3825b4efc9f9e1aaf1d72068635d091c2fb462182bd1c4967050ea9be6e
   languageName: node
   linkType: hard
 
